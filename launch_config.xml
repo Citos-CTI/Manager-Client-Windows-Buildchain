@@ -2,8 +2,8 @@
 <launch4jConfig>
   <dontWrapJar>false</dontWrapJar>
   <headerType>gui</headerType>
-  <jar>C:\Users\johannes\Documents\ProjekteGit\Manager-Client-Builder\Citos.jar</jar>
-  <outfile>C:\Users\johannes\Documents\ProjekteGit\Manager-Client-Builder\Citos-Client.exe</outfile>
+  <jar>Citos.jar</jar>
+  <outfile>Citos-Client.exe</outfile>
   <errTitle></errTitle>
   <cmdLine></cmdLine>
   <chdir>.</chdir>
@@ -13,7 +13,7 @@
   <stayAlive>false</stayAlive>
   <restartOnCrash>false</restartOnCrash>
   <manifest></manifest>
-  <icon>C:\Users\johannes\Documents\ProjekteGit\Manager-Client-Builder\easy_cti_logo_round.ico</icon>
+  <icon>easy_cti_logo_round.ico</icon>
   <singleInstance>
     <mutexName>citos-telephony-client</mutexName>
     <windowTitle></windowTitle>
