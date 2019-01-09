@@ -2,15 +2,17 @@ import os
 import wget
 from github3 import login
 
+token = ''
+with open('accessToken.txt') as f:
+    token = f.readline()
 
-token = 'a0c2a8015a5c71a0947ba5e6805ef0a97cd3805d'
 gh = login('','',token)
 
 string_upl = ""
 import requests
 sessionObj = requests.session()
 url1='https://api.github.com/user'
-r = requests.get('https://api.github.com/user', auth=('Johnny-Engler', 'a0c2a8015a5c71a0947ba5e6805ef0a97cd3805d'))
+r = requests.get('https://api.github.com/user', auth=('Johnny-Engler', token))
 
 with requests.get('https://api.github.com/repos/Citos-CTI/Client/releases/latest') as response:
     data = response.json()
