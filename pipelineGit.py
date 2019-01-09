@@ -4,8 +4,8 @@ from github3 import login
 
 token = ''
 with open('accessToken.txt') as f:
-    token = f.readline()
-
+    token = f.readline().replace("\n", "")
+print(token)
 gh = login('','',token)
 
 string_upl = ""
